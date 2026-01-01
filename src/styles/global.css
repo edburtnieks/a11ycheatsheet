@@ -95,8 +95,7 @@ a {
         text-decoration-thickness: 3px;
     }
 
-    &:focus-visible,
-    &:active {
+    &:focus-visible {
         color: var(--color-global-text);
         background-color: var(--color-link-focus-highlight);
         box-shadow:
@@ -119,6 +118,8 @@ ul[role='list'] {
     margin-inline: auto;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    /* Respect the grid column width and allow grid items to shrink */
+    min-width: 0;
 }
 
 .mt-xs {
