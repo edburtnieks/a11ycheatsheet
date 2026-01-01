@@ -1,5 +1,7 @@
 <script lang="ts">
     import { createECInstance } from '$lib/components/code/state.svelte';
+    import SiteFooter from '$lib/components/site-footer/SiteFooter.svelte';
+    import SiteHeader from '$lib/components/site-header/SiteHeader.svelte';
     import '$styles/global.css';
 
     const { children } = $props();
@@ -11,8 +13,10 @@
     <title>Accessibility Cheatsheet</title>
 </svelte:head>
 
-<div class="wrapper">
+<div class="site-wrapper">
+    <SiteHeader />
     {@render children()}
+    <SiteFooter />
 </div>
 
 <!-- eslint-disable-next-line svelte/no-at-html-tags -->
