@@ -4,11 +4,24 @@
     const withVisibleTextLabelHtml = `<button>
     <svg aria-hidden="true"><!-- SVG content --></svg>
     Undo
+</button>
+
+<!-- Or using <img /> -->
+
+<button>
+    <img src="image.webp" alt="" />
+    Undo
 </button>`;
 
     const withVisuallyHiddenTextLabelHtml = `<button aria-labelledby="undo-button-label">
     <svg aria-hidden="true"><!-- SVG content --></svg>
     <span id="undo-button-label" hidden>Undo</span>
+</button>
+
+<!-- Or using <img /> -->
+
+<button>
+    <img src="image.webp" alt="Undo" />
 </button>`;
 </script>
 
