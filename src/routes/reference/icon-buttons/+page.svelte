@@ -31,12 +31,10 @@
 
 <main>
     <h1 class="mt-l-xl">Icon buttons</h1>
-
     <h2 class="mt-l-xl">With visible text label</h2>
     <div class="mt-xs">
         <Code code={withVisibleTextLabelHtml} language="html" />
     </div>
-
     <h2 class="mt-l-xl">With visually hidden text label</h2>
     <div class="mt-xs">
         <Code code={withVisuallyHiddenTextLabelHtml} language="html" />
