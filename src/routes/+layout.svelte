@@ -18,7 +18,9 @@
     <div>
         {@render children()}
     </div>
-    <SiteFooter />
+    <div class="mt-l-xl">
+        <SiteFooter />
+    </div>
 </div>
 
 <!-- eslint-disable-next-line svelte/no-at-html-tags -->
